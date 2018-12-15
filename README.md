@@ -1,27 +1,24 @@
 # GitHub Finder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+Github Finder which i created as a fun project after learning Angular.
 
-## Development server
+Where you can search with username and view user profile, can see the number of repos, followers, following, and list of repos from where yoy can go to the repository on github.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setting Up
 
-## Code scaffolding
+To run this app, you need to register a github app from *Developer Settings*,
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+after registering you'll have a *Client ID* and *Client Secret*
 
-## Build
+Now go to *src/app/services/github.services.ts* file of this application,
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+where you can find `YOUR CLIENT ID`, and `YOUR CLIENT SECRET`, replace these with your client id and secret.
 
-## Running unit tests
+Also replace `YOUR USERNAME` with your *github username*.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running this project
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+You must have angular installed, now
+ - Run `npm install` to install all dependencies
+ - Run `ng serve` to start the project
+ - Go to `http://localhost:4200` to view the Project
